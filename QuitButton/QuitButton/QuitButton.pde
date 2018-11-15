@@ -1,7 +1,7 @@
-color purple = #FF03F3;
-color yellow = #FFF703;
+color purple = #9933ff;
+color blue = #00a3cc;
 color regularButton = purple;
-color hoverOverButton = yellow;
+color hoverOverButton = blue;
 
 void setup() {
   size(500, 600);
