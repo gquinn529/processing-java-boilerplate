@@ -11,7 +11,7 @@ int eyeDiameter;
 float measlesX, measlesY, measlesDiamter;
 
 //Declaration and Assignment
-color red = #FF0307;
+color purple = #990099;
 color white = #FFFFFF;
 
 void setup() {
@@ -29,17 +29,18 @@ void setup() {
   strokeWeight(1);
   measlesDiamter = width*1/60; //Other measles varaibles need to be in draw()
   strokeWeight(1);
+  buttonRectangles();
 }
 
 void draw() {
   
   //Arithmetic First
-  measlesX = random(width);
-  measlesY = random(height);
+  measlesArithmetic();
+  //Draw Measles
+  drawMeasles();
   
   //Drawing Second
-  fill(red); 
-  ellipse(measlesX, measlesY, measlesDiamter, measlesDiamter);
+  
   fill(white); //White, resetts fill to default
   ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
    ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter); //Left Eye
